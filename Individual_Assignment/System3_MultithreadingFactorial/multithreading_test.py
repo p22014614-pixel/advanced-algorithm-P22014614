@@ -1,7 +1,7 @@
 import threading
 import time
 
-from factorial import factorial
+from factorial import repeated_factorial
 
 
 
@@ -10,18 +10,8 @@ results = {}
 
 
 def calculate_factorial(number):
-
-    start = time.time_ns()
-
-
-    result = factorial(number)
-
-
-    end = time.time_ns()
-
-
+    result = repeated_factorial(number, 10000)
     results[number] = result
-
 
 
 def run_multithreading():
