@@ -1,6 +1,6 @@
 import time
 
-from factorial import factorial
+from factorial import repeated_factorial
 
 
 
@@ -8,13 +8,11 @@ def run_normal():
 
     start_time = time.time_ns()
 
+    repeated_factorial(50, 10000)
 
+    repeated_factorial(100, 10000)
 
-    factorial(50)
-
-    factorial(100)
-
-    factorial(200)
+    repeated_factorial(200, 10000)
 
 
 
