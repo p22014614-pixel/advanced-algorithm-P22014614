@@ -1,5 +1,6 @@
 from medicine import Medicine
 from hashTable import HashTable
+from performance_test import performance_test
 
 
 inventory = HashTable(20)
@@ -32,7 +33,9 @@ while True:
     print("1. Display Inventory")
     print("2. Insert Medicine")
     print("3. Search Medicine")
-    print("4. Exit")
+    print("4. Performance Test")
+    print("5. Exit")
+
 
 
     choice = input("Enter choice: ")
@@ -83,8 +86,11 @@ while True:
             print("Medicine not found")
 
 
-
     elif choice == "4":
+        performance_test()
+
+
+    elif choice == "5":
 
         print("System Closed")
         break
